@@ -15,6 +15,7 @@ namespace DesktopApp
                 // Tworzenie menu
                 Console.WriteLine("Menu:");
                 Console.WriteLine("1. Zwierzęta");
+                Console.WriteLine("2. Quiz o zwierzętach");
                 Console.WriteLine("2. Ciekawostki");
                 Console.WriteLine("3. Forum");
                 Console.WriteLine("4. Zamknij program");
@@ -26,16 +27,19 @@ namespace DesktopApp
                 switch (wybor)
                 {
                     case 1:
-                        WyswietlZwierzeta();
+                        Zwierzeta.WyswietlZwierzeta();
                         break;
                     case 2:
-                        Ciekawostki.WyswietlCiekawostki();
+                        RozpocznijQuiz();
                         break;
                     case 3:
+                        Ciekawostki.WyswietlCiekawostki();
+                        break;
+                    case 4:
                         Forum forum = new Forum();
                         forum.WyswietlPytania();
                         break;
-                    case 4:
+                    case 5:
                         zakonczono = true;
                         break;
                     default:
@@ -44,6 +48,18 @@ namespace DesktopApp
                 }
             }
         }
+        static void RozpocznijQuiz()
+        {
+            
+            Console.WriteLine("Quiz o zwierzętach:");
+            Console.WriteLine("1. Pytanie 1: ...");
+            Console.WriteLine("2. Pytanie 2: ...");
+            Console.WriteLine("3. Pytanie 3: ...");
+            
+        }
+
+
+
     }
 }
 

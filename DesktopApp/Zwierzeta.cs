@@ -24,7 +24,7 @@ namespace DesktopApp
       //  }
    // }
 //}
-static void WyswietlZwierzeta()
+ public static void WyswietlZwierzeta()
 {
     // Wypisz 20 nazw zwierząt
     Console.WriteLine("Zwierzęta:");
@@ -37,7 +37,7 @@ static void WyswietlZwierzeta()
     Console.Write("Wybierz zwierzę (1-20): ");
     int wybor = int.Parse(Console.ReadLine());
 
-    // Wyświetlenie opisu wybranego zwierzęcia
+    // Wyświetla opis wybranego zwierzęcia
     Console.WriteLine($"Opis zwierzęcia {wybor}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 
     // Wyświetlenie menu

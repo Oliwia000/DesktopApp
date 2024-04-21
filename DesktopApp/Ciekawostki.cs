@@ -31,7 +31,7 @@ namespace DesktopApp
 
             if (odpowiedz.ToLower() == "tak")
             {
-                // Po wyborze dodawania ciekawostki
+                // Po wyborze dodaaj ciekawostki
                 Console.WriteLine("Dodaj nową ciekawostkę:");
                 Console.WriteLine("Wpisz treść ciekawostki:");
                 string nowaCiekawostka = Console.ReadLine();
@@ -41,6 +41,20 @@ namespace DesktopApp
 
                 Console.WriteLine("Ciekawostka została dodana.");
             }
+            // Wyświetla wszystkich ciekawostki
+            Console.WriteLine("Wszystkie ciekawostki:");
+            foreach (var ciekawostka in ciekawostki)
+            {
+                Console.WriteLine(ciekawostka);
+            }
         }
     }
 }
+
+
+          
+
+  
+
+
+ 

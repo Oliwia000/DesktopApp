@@ -37,7 +37,7 @@ namespace DesktopApp
             ZapiszDoPliku();
         }
 
-        // Usuwanie pytania z forum
+        // Usuwaniie pytania z forum
         public void UsunPytanie(string pytanie)
         {
             pytania.Remove(pytanie);
@@ -55,7 +55,7 @@ namespace DesktopApp
             }
         }
 
-        // Wyświetlanie pytań na forum
+        // Wyświetlenie pytań na forum
         public void WyswietlPytania()
         {
             Console.WriteLine("Pytania na forum:");
@@ -73,7 +73,7 @@ namespace DesktopApp
             }
         }
 
-        // Zapisanie pytań do pliku XML
+        // Zapisuje pytania do pliku XML
         private void ZapiszDoPliku()
         {
             using (var writer = new XmlTextWriter(sciezkaPliku, null))
@@ -83,7 +83,7 @@ namespace DesktopApp
             }
         }
 
-        // Wczytanie pytań z pliku XML
+        // Wczytywanie pytań z pliku XML
         private void WczytajZPliku()
         {
             if (File.Exists(sciezkaPliku))
