@@ -26,7 +26,7 @@ namespace DesktopApp
                 switch (wybor)
                 {
                     case 1:
-                        WyswietlZwierzeta();
+                        Zwierzeta.WyswietlZwierzeta();
                         break;
                     case 2:
                         Ciekawostki.WyswietlCiekawostki();

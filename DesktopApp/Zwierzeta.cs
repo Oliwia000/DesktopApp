@@ -24,7 +24,7 @@ namespace DesktopApp
       //  }
    // }
 //}
-static void WyswietlZwierzeta()
+ public static void WyswietlZwierzeta()
 {
     // Wypisz 20 nazw zwierząt
     Console.WriteLine("Zwierzęta:");
