@@ -5,13 +5,15 @@ namespace DesktopApp
 {
     public class Ciekawostki
     {
-        private static List<string> ciekawostki = new List<string>();
+        public static List<string> ciekawostki = new List<string>();  //Deklaruje  listę ciekawostek
+
+
 
         public static void WyswietlCiekawostki()
         {
             Console.WriteLine("Ciekawostki:");
 
-            if (ciekawostki.Count == 0)
+            if (ciekawostki.Count == 0)  //Sprawdza, czy lista ciekawostek jest pusta
             {
                 Console.WriteLine("Brak ciekawostek.");
             }
@@ -34,27 +36,43 @@ namespace DesktopApp
                 // Po wyborze dodaaj ciekawostki
                 Console.WriteLine("Dodaj nową ciekawostkę:");
                 Console.WriteLine("Wpisz treść ciekawostki:");
-                string nowaCiekawostka = Console.ReadLine();
+                string nowaCiekawostka = Console.ReadLine();  //pobiera nową ciekawostkę
 
                 // Dodanie nowej ciekawostki do listy
                 ciekawostki.Add(nowaCiekawostka);
 
                 Console.WriteLine("Ciekawostka została dodana.");
             }
+            // Wyświetlanie menu
+            Console.WriteLine("Menu:");
+            Console.WriteLine("1. Wróć do menu głównego");
+            Console.WriteLine("2. Zamknij program");
+
+            // Pobieranie wyboru użytkownika
+            Console.Write("Wybierz opcję: ");
+            int wybor = int.Parse(Console.ReadLine());
+
+            switch (wybor)
+            {
+                case 1:
+                    Console.WriteLine("Powrót do menu głównego...");
+                    Console.ReadKey();
+                    break;
+                case 2:
+                    Environment.Exit(0);   // Zamknij program
+                    break;
+                default:
+                    Console.WriteLine("Błędny wybór opcji!");
+                    break;
+            }
+        } } }
             // Wyświetla wszystkich ciekawostki
-            Console.WriteLine("Wszystkie ciekawostki:");
-            foreach (var ciekawostka in ciekawostki)
+             Console.WriteLine("Wszystkie ciekawostki:");
+                foreach (var ciekawostka in ciekawostki)
             {
                 Console.WriteLine(ciekawostka);
             }
         }
-    }
-}
-
-
-          
-
-  
-
+    }}
 
  

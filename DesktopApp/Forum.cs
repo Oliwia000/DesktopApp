@@ -6,39 +6,30 @@ using System.Xml.Serialization;
 
 namespace DesktopApp
 {
-    // Interfejs dla forum z pytaniami
-    public interface IForum
+    public interface IForum  // Interfejs dla forum z pytaniami
     {
         void DodajPytanie(string pytanie);
-        void UsunPytanie(string pytanie);
+        void UsunPytanie(string pytanie);    //deklaracaja metody
         void EdytujPytanie(string pytanie, string nowePytanie);
         void WyswietlPytania();
     }
-
-    // Klasa reprezentująca forum z pytaniami
-    public class Forum : IForum
+    public class Forum : IForum // Klasa reprezentująca forum z pytaniami
     {
-        // Ścieżka do pliku XML
-        private string sciezkaPliku = "forum.xml";
+        private string sciezkaPliku = "forum.xml";  // Ścieżka do pliku XML
 
         // Lista pytań na forum
         private List<string> pytania = new List<string>();
 
         public Forum()
         {
-            // Wczytanie pytań z pliku XML przy tworzeniu instancji klasy
-            WczytajZPliku();
+          WczytajZPliku(); // Wczytywanie pytań z pliku XML
         }
-
-        // Dodawanie pytania do forum
-        public void DodajPytanie(string pytanie)
+        public void DodajPytanie(string pytanie)  // Dodawanie pytania do forum
         {
             pytania.Add(pytanie);
-            ZapiszDoPliku();
+            ZapiszDoPliku(); 
         }
-
-        // Usuwaniie pytania z forum
-        public void UsunPytanie(string pytanie)
+        public void UsunPytanie(string pytanie)    // Usuwaniie pytania z forum
         {
             pytania.Remove(pytanie);
             ZapiszDoPliku();
@@ -48,14 +39,14 @@ namespace DesktopApp
         public void EdytujPytanie(string pytanie, string nowePytanie)
         {
             int index = pytania.IndexOf(pytanie);
-            if (index != -1)
+            if (index != -1)    //Sprawdza czy pytanie zostało znalezione w liście
             {
                 pytania[index] = nowePytanie;
                 ZapiszDoPliku();
             }
         }
 
-        // Wyświetlenie pytań na forum
+        // Wyświetla pytania na forum
         public void WyswietlPytania()
         {
             Console.WriteLine("Pytania na forum:");
@@ -72,26 +63,23 @@ namespace DesktopApp
                 }
             }
         }
-
-        // Zapisuje pytania do pliku XML
-        private void ZapiszDoPliku()
+        private void ZapiszDoPliku()    // Zapisuje pytania do pliku XML
         {
-            using (var writer = new XmlTextWriter(sciezkaPliku, null))
+            using (var writer = new XmlTextWriter(sciezkaPliku, null))  //Tworzy obiekt writer do zapisu danych do pliku XML
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
+                XmlSerializer serializer = new XmlSerializer(typeof(List<string>));  //Tworzy obiekt serializer do listy pytań
                 serializer.Serialize(writer, pytania);
             }
         }
-
         // Wczytywanie pytań z pliku XML
-        private void WczytajZPliku()
+        public void WczytajZPliku()
         {
             if (File.Exists(sciezkaPliku))
             {
-                using (var reader = new XmlTextReader(sciezkaPliku))
+                using (var reader = new XmlTextReader(sciezkaPliku)) //Tworzy o. reader do odczytu danych z pliku XML
                 {
                     XmlSerializer serializer = new XmlSerializer(typeof(List<string>));
-                    pytania = (List<string>)serializer.Deserialize(reader);
+                    pytania = (List<string>)serializer.Deserialize(reader);   //odczytaniu wcześniej zapisane dane z pliku i przypisuje do listy pytań
                 }
             }
         }

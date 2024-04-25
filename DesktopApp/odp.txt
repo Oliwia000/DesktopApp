@@ -1,0 +1,17 @@
+1;Jakie zwierzê nale¿y do gromady gadów?;4;Pies;Krowa;Kot;W¹¿
+2;Które z poni¿szych to ssak?;1;Nosoro¿ec;Krokodyl;Paj¹k;Rekin
+3;Które z tych zwierz¹t jest ptakiem?;3;Delfin;Rekin;Orze³;Wieloryb
+4;Które z tych zwierz¹t jest roœlino¿erne?;3;Orze³;Rekin;Krowa;Lew
+5;Które z tych zwierz¹t jest drapie¿nikiem morskim?;2;Delfin;Rekin;¯ó³w;Wieloryb
+6;Gdzie ¿yj¹ pingwiny?;1;Na Antarktydzie;W Saharze; W Ameryce Po³udniowej;Na Syberii
+7;Jak nazywa siê gatunek ptaka, który potrafi naœladowaæ ludzkie g³osy?;4;Sowa;Go³¹b;Kruk;Papuga
+8;Które z tych zwierz¹t jest najwiêkszym drapie¿nikiem l¹dowym?;2;Nosoro¿ec;Tygrys;Panda;Hipopotam
+9;Które z tych zwierz¹t jest ptakiem?;3;Delfin;Rekin;Orze³;Wieloryb
+10;Jak nazywa siê zwierzê, które potrafi zmieniæ kolor swojej skóry?;2;Zebra;Kameleon;Lis;Wieloryb
+11;Jak nazywa siê gatunek wilka znany z bia³ego futra?;3;Wilk arktyczny;wilk egipski.;Wilk polarny;Wilk szary
+12;Które z tych zwierz¹t jest najwiêksze l¹dowe ssakiem?;2;NiedŸwiedŸ polarne;S³oñ;Kangur;Gepard
+
+
+
+
+

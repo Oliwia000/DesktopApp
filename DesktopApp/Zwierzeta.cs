@@ -20,13 +20,13 @@ namespace DesktopApp
 
             // Wyświetlenie opisu i zdjęcia wybranego zwierzęcia
           //  Console.WriteLine($"Opis zwierzęcia {wybraneZwierze}:");
-            // Tutaj można dodać kod do wyświetlenia opisu i zdjęcia wybranego zwierzęcia
+           
       //  }
    // }
 //}
  public static void WyswietlZwierzeta()
 {
-    // Wypisz 20 nazw zwierząt
+    // Wypisuje 20 nazw zwierząt
     Console.WriteLine("Zwierzęta:");
     for (int i = 1; i <= 20; i++)
     {
@@ -35,10 +35,10 @@ namespace DesktopApp
 
     // Pobranie wyboru użytkownika
     Console.Write("Wybierz zwierzę (1-20): ");
-    int wybor = int.Parse(Console.ReadLine());
+    int wybor = int.Parse(Console.ReadLine());  //Pobiera dane wprowadzone przez użytkownika i sprowadza je do typu int
 
-    // Wyświetla opis wybranego zwierzęcia
-    Console.WriteLine($"Opis zwierzęcia {wybor}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+            // Wyświetla opis wybranego zwierzęcia
+            Console.WriteLine($"Opis zwierzęcia {wybor}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 
     // Wyświetlenie menu
     Console.WriteLine("Menu:");
