@@ -65,14 +65,13 @@ namespace DesktopApp
                     Console.WriteLine("Błędny wybór opcji!");
                     break;
             }
-        } } }
+
             // Wyświetla wszystkich ciekawostki
-             Console.WriteLine("Wszystkie ciekawostki:");
-                foreach (var ciekawostka in ciekawostki)
+            Console.WriteLine("Wszystkie ciekawostki:");
+            foreach (var ciekawostka in ciekawostki)
             {
                 Console.WriteLine(ciekawostka);
             }
         }
-    }}
-
- 
+    }
+}

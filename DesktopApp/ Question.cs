@@ -1,6 +1,6 @@
-namespace DesktopApp
+namespace DesktopApp;
 
-    class Question //Definicja klasy
+   public class Question //Definicja klasy
 {
     public int id { get; set; }   // przechowuje id pytania
     public string pytanie { get; set; }
