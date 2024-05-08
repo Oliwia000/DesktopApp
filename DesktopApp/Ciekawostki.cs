@@ -43,6 +43,12 @@ namespace DesktopApp
 
                 Console.WriteLine("Ciekawostka została dodana.");
             }
+            // Wyświetla wszystkie ciekawostki
+            Console.WriteLine("Wszystkie ciekawostki:");
+            foreach (var ciekawostka in ciekawostki)
+            {
+                Console.WriteLine(ciekawostka);
+            }
             // Wyświetlanie menu
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Wróć do menu głównego");
@@ -55,7 +61,7 @@ namespace DesktopApp
             switch (wybor)
             {
                 case 1:
-                    Console.WriteLine("Powrót do menu głównego...");
+                    Console.WriteLine("Powrót do menu głównego");
                     Console.ReadKey();
                     break;
                 case 2:
@@ -66,12 +72,7 @@ namespace DesktopApp
                     break;
             }
 
-            // Wyświetla wszystkich ciekawostki
-            Console.WriteLine("Wszystkie ciekawostki:");
-            foreach (var ciekawostka in ciekawostki)
-            {
-                Console.WriteLine(ciekawostka);
-            }
+         
         }
     }
 }

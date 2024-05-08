@@ -50,16 +50,9 @@ namespace DesktopApp;
             Console.WriteLine($"{i + 1}. {zwierzeta[i].Nazwa}");
         }
 
-        // Wypisuje 20 nazw zwierząt
-        //Console.WriteLine("Zwierzęta:");
-        //for (int i = 1; i <= 20; i++)
-        // {
-        //  Console.WriteLine($"{i}. Zwierzę {i}");
-        // }
-
         // Pobranie wyboru użytkownika
         Console.Write("Wybierz zwierzę (1-20): ");
-            int wybor = int.Parse(Console.ReadLine()) -1;  //Pobiera dane wprowadzone przez użytkownika i sprowadza je do typu int
+            int wybor = int.Parse(Console.ReadLine()) -1;  //Pobiera dane wprowadzone przez użytkownika i sprowadza je do typu int ( zmniejssza o 1 jeśli jest taka potrzeba .bo aczyna się od 0)
         
         // Sprawdzenie czy wybór mieści się w zakresie tablicy
         if (wybor >= 0 && wybor < zwierzeta.Length)
@@ -72,8 +65,7 @@ namespace DesktopApp;
         {
             Console.WriteLine("Błędny numer zwierzęcia!");
         }
-        // Wyświetla opis wybranego zwierzęcia
-        //Console.WriteLine($"Opis zwierzęcia {wybor}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        
 
         // Wyświetlenie menu
         Console.WriteLine("Menu:");
