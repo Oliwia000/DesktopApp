@@ -12,8 +12,6 @@ namespace DesktopApp
         {
 
             Console.WriteLine("Quiz o zwierzętach:");
-
-            static void Main(string[] args)
             {
                 bool repeat = true;
                 int highestscore = 0;
