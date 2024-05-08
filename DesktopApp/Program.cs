@@ -27,7 +27,7 @@ namespace DesktopApp
                         Zwierzeta.WyswietlZwierzeta();
                         break;
                     case 2:
-                        RozpocznijQuiz();
+                        Quiz.RozpocznijQuiz();
                         break;
                     case 3:
                         Ciekawostki.WyswietlCiekawostki();
