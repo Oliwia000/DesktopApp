@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace DesktopApp1;
+namespace DesktopApp;
 
     class Zwierzeta
     {
@@ -96,4 +96,4 @@ namespace DesktopApp1;
             }
         }
     }
-}
+
