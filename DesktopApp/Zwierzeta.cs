@@ -18,7 +18,7 @@ namespace DesktopApp;
 
     public static void WyswietlZwierzeta()
         {
-
+        
         // Tablica zawierająca obiekty Zwierze
         Zwierzeta[] zwierzeta = new Zwierzeta[]
         {
@@ -44,20 +44,24 @@ namespace DesktopApp;
            new Zwierzeta("Papuga", "Kolorowe ptaki, znane ze swojej zdolności do naśladowania ludzkiego mowy i żywych barw ich piór"),
         };
         // Wypisuje dostępne zwierzęta na liście
-        Console.WriteLine("Dostępne zwierzęta na liście:");
+        Console.ForegroundColor = ConsoleColor.Blue; Console.WriteLine("Dostępne zwierzęta na liście:");
         for (int i = 0; i < zwierzeta.Length; i++)
         {
             Console.WriteLine($"{i + 1}. {zwierzeta[i].Nazwa}");
         }
 
         // Pobranie wyboru użytkownika
+        Console.BackgroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.White;
         Console.Write("Wybierz zwierzę (1-20): ");
-            int wybor = int.Parse(Console.ReadLine()) -1;  //Pobiera dane wprowadzone przez użytkownika i sprowadza je do typu int ( zmniejssza o 1 jeśli jest taka potrzeba .bo aczyna się od 0)
+        Console.BackgroundColor = ConsoleColor.Black;
+        int wybor = int.Parse(Console.ReadLine()) -1;  //Pobiera dane wprowadzone przez użytkownika i sprowadza je do typu int ( zmniejssza o 1 jeśli jest taka potrzeba .bo aczyna się od 0)
         
         // Sprawdzenie czy wybór mieści się w zakresie tablicy
         if (wybor >= 0 && wybor < zwierzeta.Length)
         {
             // Wyświetla nazwę i opis wybranego zwierzęcia
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine($"Nazwa: {zwierzeta[wybor].Nazwa}");
             Console.WriteLine($"Opis: {zwierzeta[wybor].Opis}");
         }
