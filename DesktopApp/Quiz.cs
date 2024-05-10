@@ -29,7 +29,7 @@ namespace DesktopApp
                         case 1:
                             List<Question> questions = new List<Question>();
                             StreamReader file = new StreamReader(@"C:\Users\Oliwia\Source\Repos\Oliwia000\DesktopApp\DesktopApp\odp.txt");
-                            file.ReadLine();
+                            file.ReadLine();  //pomija od.kol.lin z pli.
                             while (!file.EndOfStream)  //Pętla wykonuje się dopóki nie osiągnie końca pliku
                             {
                                 string[] words = file.ReadLine().Split(';');
