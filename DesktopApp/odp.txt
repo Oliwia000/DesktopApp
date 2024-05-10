@@ -1,5 +1,5 @@
-1;Jakie zwierzê nale¿y do gromady gadów?;4;Pies;Krowa;Kot;W¹¿;
-2;Które z poni¿szych to ssak?;1;Nosoro¿ec;Krokodyl;Paj¹k;Rekin;
+1;Jakie zwierzê nale¿y do gromady gadów?;4;Pies;Krowa;Kot;W¹¿
+2;Które z poni¿szych to ssak?;1;Nosoro¿ec;Krokodyl;Paj¹k;Rekin
 3;Które z tych zwierz¹t jest ptakiem?;3;Delfin;Rekin;Orze³;Wieloryb
 4;Które z tych zwierz¹t jest roœlino¿erne?;3;Orze³;Rekin;Krowa;Lew
 5;Które z tych zwierz¹t jest drapie¿nikiem morskim?;2;Delfin;Rekin;¯ó³w;Wieloryb

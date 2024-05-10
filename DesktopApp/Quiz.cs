@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,7 +29,7 @@ namespace DesktopApp
                     {
                         case 1:
                             List<Question> questions = new List<Question>();
-                            StreamReader file = new StreamReader(@"C:\Users\Oliwia\Source\Repos\Oliwia000\DesktopApp\DesktopApp\odp.txt");
+                            StreamReader file = new StreamReader(@"C:\Users\student\Source\Repos\DesktopApp\DesktopApp\odp.txt");
                             file.ReadLine();  //pomija od.kol.lin z pli.
                             while (!file.EndOfStream)  //Pętla wykonuje się dopóki nie osiągnie końca pliku
                             {
