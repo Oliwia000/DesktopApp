@@ -22,9 +22,9 @@ namespace DesktopApp;
         // Tablica zawierająca obiekty Zwierze
         Zwierzeta[] zwierzeta = new Zwierzeta[]
         {
-            new Zwierzeta("Kot", "Małe, futrzaste zwierzę, lubiące drzemki i polowania."),
-            new Zwierzeta("Pies", "Wierny przyjaciel człowieka, oddany i pełen energii."),
-            new Zwierzeta("Ryś", "dziki kot, zamieszkujący lasy górskie, znany ze swojej zwinności i elegancji"),
+           new Zwierzeta("Kot", "Małe, futrzaste zwierzę, lubiące drzemki i polowania."),
+           new Zwierzeta("Pies", "Wierny przyjaciel człowieka, oddany i pełen energii."),
+           new Zwierzeta("Ryś", "dziki kot, zamieszkujący lasy górskie, znany ze swojej zwinności i elegancji"),
            new Zwierzeta("Kameleon", "Egzotyczna jaszczurka zdolna zmieniać kolor skóry, aby dostosować się do otoczenia i uniknąć drapieżników."),
            new Zwierzeta("Pingwin", "Kształtne ptaki morskie, niezdolne do latania, ale zręczne w pływaniu i zdolne do przetrwania w trudnych warunkach Antarktyki."),
            new Zwierzeta("Koala", "Urocze stworzenia z Australii, spędzające większość czasu na drzewach, znane z ich słodkiego wyglądu i leniwego stylu życia."),

@@ -34,6 +34,9 @@ namespace DesktopApp
             pytania.Remove(pytanie);
             ZapiszDoPliku();
         }
+        //string option ="usuń"
+
+
 
         // Edytowanie pytania na forum
         public void EdytujPytanie(string pytanie, string nowePytanie)

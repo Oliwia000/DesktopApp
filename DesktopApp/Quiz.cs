@@ -22,7 +22,7 @@ namespace DesktopApp
                     Console.WriteLine($"Obecny najwyższy wynik: {highestscore}");
                     Console.WriteLine("Wybierz daną opcje i wciśnij enter");
                     Console.WriteLine("1. Rozpocznij quiz");
-                    Console.WriteLine("2. Wyjdz");
+                    Console.WriteLine("2. Wyjd");
                     Console.WriteLine("Twój wybór:");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -34,7 +34,6 @@ namespace DesktopApp
                             while (!file.EndOfStream)  //Pętla wykonuje się dopóki nie osiągnie końca pliku
                             {
                                 string[] words = file.ReadLine().Split(';');
-
                                 Question newquestion = new Question(Convert.ToInt32(words[0]), words[1], Convert.ToInt32(words[2]), words[3], words[4], words[5], words[6]);
                                 questions.Add(newquestion);
                             }
