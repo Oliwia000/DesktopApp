@@ -40,11 +40,13 @@ namespace DesktopApp
 
                 // Dodanie nowej ciekawostki do listy
                 ciekawostki.Add(nowaCiekawostka);
-
+                Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine("Ciekawostka została dodana.");
             }
             // Wyświetla wszystkie ciekawostki
+            Console.BackgroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Wszystkie ciekawostki:");
+            Console.BackgroundColor = ConsoleColor.Black;
             foreach (var ciekawostka in ciekawostki)
             {
                 Console.WriteLine(ciekawostka);
