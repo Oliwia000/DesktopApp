@@ -6,7 +6,7 @@ namespace DesktopApp
     {
         static void Main(string[] args)
         {
-            bool zakonczono = false;
+            bool zakonczono = false;   //bool typ logiczny (true albo false)
             while (!zakonczono)
             {
                 Console.WriteLine("Witaj na stronie głównej!");
